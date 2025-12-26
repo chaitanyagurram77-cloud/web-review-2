@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Feedback Received</h2>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <div class="card">
+    <p><b>Project:</b> <span id="pname"></span></p>
+    <p><b>Feedback:</b> <span id="ftext"></span></p>
+    <p><b>Rating:</b> <span id="frating"></span></p>
+  </div>
+</main>
+
+<footer>© KL University 2025 | Team 26</footer>
+
+<script>
+document.getElementById("pname").innerText = localStorage.getItem("project");
+document.getElementById("ftext").innerText = localStorage.getItem("feedback");
+document.getElementById("frating").innerText = localStorage.getItem("rating");
+</script>
+
+</body>
+</html>

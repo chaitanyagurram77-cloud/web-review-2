@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peer Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Peer Review</h2>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <div class="card">
+    <h3>Submit Feedback</h3>
+
+    <label>Project Title</label>
+    <input type="text" id="project">
+
+    <label>Feedback</label>
+    <textarea id="feedback"></textarea>
+
+    <label>Rating (1–10)</label>
+    <input type="number" id="rating" min="1" max="10">
+
+    <button onclick="submitFeedback()">Submit</button>
+  </div>
+</main>
+
+<footer>© KL University 2025 | Team 26</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

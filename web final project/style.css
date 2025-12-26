@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- PAGE LOAD ANIMATION ---------- */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  animation: fadeSlide 0.8s ease-in;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: white;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeSlide 1s ease;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+/* NAV LINK UNDERLINE ANIMATION */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #ffeb3b;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- LOGIN BOX ---------- */
+.login-box {
+  background: white;
+  width: 380px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  text-align: center;
+  animation: fadeSlide 1.2s ease;
+}
+
+.login-box h1 {
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #004aad;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 2px solid #cce0ff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.6);
+  outline: none;
+}
+
+/* ---------- BUTTONS ---------- */
+button, .btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px;
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ---------- DASHBOARD ---------- */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 50px auto;
+  max-width: 900px;
+  animation: fadeSlide 1.4s ease;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER ANIMATION */
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeSlide 1.3s ease;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  background: #004aad;
+  color: white;
+  padding: 12px;
+  margin-top: 60px;
+  font-size: 14px;
+  animation: fadeSlide 1.6s ease;
+}
